@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Invoice
 {
     @Id
-    private int invoiceId;   // manual id
+    private int invoiceId;   
 
     private String name;
     private String date;
