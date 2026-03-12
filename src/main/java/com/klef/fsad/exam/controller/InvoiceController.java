@@ -15,14 +15,13 @@ public class InvoiceController
     @Autowired
     InvoiceService service;
 
-    // POST - Add invoice
+
     @PostMapping("/add")
     public Invoice addInvoice(@RequestBody Invoice invoice)
     {
         return service.addInvoice(invoice);
     }
 
-    // GET - View invoices
     @GetMapping("/view")
     public List<Invoice> viewInvoices()
     {
